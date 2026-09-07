@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Royal Navy Background with Fine Radial Center Glow -->
+    <radialGradient id="navyCanvas" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1b2c4e" />
+      <stop offset="45%" stop-color="#0e1b33" />
+      <stop offset="85%" stop-color="#081020" />
+      <stop offset="100%" stop-color="#040810" />
+    </radialGradient>
+
+    <!-- Rich Metallic Gold / Bronze Gradients -->
+    <linearGradient id="prawnGold1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5e0" />
+      <stop offset="25%" stop-color="#f0c283" />
+      <stop offset="55%" stop-color="#d6934c" />
+      <stop offset="85%" stop-color="#9a5a22" />
+      <stop offset="100%" stop-color="#693b13" />
+    </linearGradient>
+
+    <linearGradient id="prawnGold2" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="30%" stop-color="#fae2b8" />
+      <stop offset="60%" stop-color="#dfa868" />
+      <stop offset="90%" stop-color="#ad7033" />
+      <stop offset="100%" stop-color="#7a461b" />
+    </linearGradient>
+
+    <linearGradient id="prawnDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c88b48" />
+      <stop offset="50%" stop-color="#8a4f1a" />
+      <stop offset="100%" stop-color="#4e2b0b" />
+    </linearGradient>
+
+    <linearGradient id="textGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="20%" stop-color="#fae2b8" />
+      <stop offset="55%" stop-color="#dfa868" />
+      <stop offset="85%" stop-color="#c88b48" />
+      <stop offset="100%" stop-color="#8a4f1a" />
+    </linearGradient>
+
+    <radialGradient id="specularGlow" cx="60%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#fae2b8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#dfa868" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="prawnShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.75" />
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#ebb97e" flood-opacity="0.3" />
+    </filter>
+
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="100%" height="100%" fill="url(#navyCanvas)" rx="16" />
+
+  <!-- PRAWN EMBLEM -->
+  <g filter="url(#prawnShadow)" transform="translate(150, -40)">
+    <!-- 1. Antennae - Flowing graceful loop -->
+    <path d="M 180 185 C 140 145 220 100 355 105 C 405 107 445 125 435 142 C 428 155 390 148 335 132 C 255 110 200 152 180 185 Z" 
+          fill="url(#prawnGold1)" />
+    
+    <path d="M 205 190 C 180 162 245 130 335 138 C 365 140 395 152 390 160 C 382 168 350 162 320 154 C 260 138 220 168 205 190 Z" 
+          fill="url(#prawnGold2)" opacity="0.9" />
+
+    <!-- 2. Head / Carapace & Rostrum (Beak) -->
+    <path d="M 230 180 C 250 160 300 150 360 172 C 410 188 440 208 445 214 C 425 218 395 230 350 232 C 300 234 250 224 225 204 C 215 196 220 184 230 180 Z" 
+          fill="url(#prawnGold2)" stroke="url(#prawnDark)" stroke-width="2" />
+    
+    <path d="M 310 175 C 345 185 390 198 420 208 C 385 218 340 220 305 214 Z" 
+          fill="url(#specularGlow)" opacity="0.8" />
+
+    <!-- Eye -->
+    <circle cx="382" cy="192" r="6" fill="#180e05" />
+    <circle cx="384" cy="190.5" r="2" fill="#ffffff" />
+
+    <!-- 3. Abdomen Segments -->
+    <!-- Segment 1 -->
+    <path d="M 198 205 C 220 220 262 230 312 225 C 282 248 232 254 188 238 C 178 230 182 214 198 205 Z" 
+          fill="url(#prawnGold1)" stroke="url(#prawnDark)" stroke-width="2" />
+    
+    <!-- Segment 2 -->
+    <path d="M 166 238 C 198 255 242 258 280 248 C 248 272 198 280 154 262 C 146 252 152 242 166 238 Z" 
+          fill="url(#prawnGold2)" stroke="url(#prawnDark)" stroke-width="2" />
+
+    <!-- Segment 3 -->
+    <path d="M 138 264 C 168 282 214 285 248 274 C 216 298 168 306 128 288 C 120 278 126 268 138 264 Z" 
+          fill="url(#prawnGold1)" stroke="url(#prawnDark)" stroke-width="2" />
+
+    <!-- Segment 4 -->
+    <path d="M 118 292 C 148 310 192 312 224 300 C 192 324 148 332 110 314 C 104 304 108 296 118 292 Z" 
+          fill="url(#prawnGold2)" stroke="url(#prawnDark)" stroke-width="2" />
+
+    <!-- Segment 5 -->
+    <path d="M 106 320 C 135 335 174 335 205 322 C 174 345 135 352 104 338 C 98 330 100 322 106 320 Z" 
+          fill="url(#prawnGold1)" stroke="url(#prawnDark)" stroke-width="2" />
+
+    <!-- Segment 6 (Pre-tail) -->
+    <path d="M 104 346 C 128 358 166 358 194 340 C 168 365 134 372 110 362 C 102 355 102 348 104 346 Z" 
+          fill="url(#prawnGold2)" stroke="url(#prawnDark)" stroke-width="2" />
+
+    <!-- 4. Tail Fan -->
+    <path d="M 114 364 C 135 374 190 385 234 372 C 215 388 184 397 148 393 C 122 388 104 376 114 364 Z" 
+          fill="url(#prawnGold1)" stroke="url(#prawnDark)" stroke-width="1.8" />
+    
+    <path d="M 148 393 C 185 397 248 403 292 384 C 260 405 216 413 172 409 C 135 405 126 393 148 393 Z" 
+          fill="url(#prawnGold2)" stroke="url(#prawnDark)" stroke-width="1.8" />
+    
+    <path d="M 186 408 C 235 413 310 413 342 393 C 310 415 254 425 198 420 C 174 415 168 408 186 408 Z" 
+          fill="url(#prawnGold1)" stroke="url(#prawnDark)" stroke-width="1.8" />
+
+    <!-- 5. Pleopod Swimming Legs -->
+    <path d="M 324 238 C 342 253 348 272 334 285 C 328 278 330 263 318 250 C 312 242 318 238 324 238 Z" fill="url(#prawnGold2)" />
+    <path d="M 300 246 C 318 263 322 284 305 296 C 300 288 301 273 292 260 C 286 251 292 246 300 246 Z" fill="url(#prawnGold2)" />
+    <path d="M 275 254 C 294 271 295 290 278 302 C 274 294 273 278 265 266 C 260 258 267 254 275 254 Z" fill="url(#prawnGold2)" />
+    <path d="M 248 261 C 263 278 263 296 248 308 C 244 299 243 286 235 274 C 231 266 240 261 248 261 Z" fill="url(#prawnGold2)" />
+  </g>
+
+  <!-- TYPOGRAPHY: VASISTA -->
+  <g filter="url(#textShadow)">
+    <text x="400" y="475" 
+          font-family="'Cinzel', serif" 
+          font-size="76" 
+          font-weight="900" 
+          letter-spacing="10" 
+          text-anchor="middle" 
+          fill="url(#textGold)">VASISTA</text>
+  </g>
+
+  <!-- SUBTITLE: — AQUA FEEDS AND NEEDS — -->
+  <g filter="url(#textShadow)">
+    <line x1="140" y1="520" x2="210" y2="520" stroke="url(#textGold)" stroke-width="3" stroke-linecap="round" />
+    
+    <text x="400" y="528" 
+          font-family="'Inter', sans-serif" 
+          font-size="22" 
+          font-weight="800" 
+          letter-spacing="8" 
+          text-anchor="middle" 
+          fill="url(#textGold)">AQUA FEEDS AND NEEDS</text>
+          
+    <line x1="590" y1="520" x2="660" y2="520" stroke="url(#textGold)" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>
